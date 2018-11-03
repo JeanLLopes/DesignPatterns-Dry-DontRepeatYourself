@@ -6,8 +6,8 @@ namespace LibraryTest
     {
         [Theory]
         [InlineData("Jean", "Lopes", "JeanLope")]
-        [InlineData("Tim", "Lopes", "TimLope")]
-        [InlineData("Tim", "Co", "TimCo")]
+        [InlineData("Tim", "Lopes", "TimXLope")]
+        [InlineData("Tim", "Co", "TimXCoXX")]
         public void GenerateEmploeeId_ShouldCalculate(string firstName, string secondName, string expectedStart)
         {
             //Arrange
