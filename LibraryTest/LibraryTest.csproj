@@ -72,6 +72,10 @@
       <Project>{333CC2F1-2317-415F-84E2-1164BCB4DA6E}</Project>
       <Name>Library</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Standard\StandardLibrary.csproj">
+      <Project>{9C21191A-F050-4BFB-A3E7-5F531CD49CFE}</Project>
+      <Name>StandardLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

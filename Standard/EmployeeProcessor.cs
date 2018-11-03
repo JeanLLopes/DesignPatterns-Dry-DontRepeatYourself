@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Standard
+namespace StandardLibrary
 {
     public class EmployeeProcessor
     {

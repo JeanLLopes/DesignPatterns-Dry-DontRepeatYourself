@@ -1,4 +1,4 @@
-﻿using Library;
+﻿using StandardLibrary;
 using Xunit;
 namespace LibraryTest
 {
