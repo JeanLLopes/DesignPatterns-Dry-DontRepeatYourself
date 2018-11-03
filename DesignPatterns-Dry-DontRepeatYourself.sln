@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFUI", "WPFUI\WPFUI.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{333CC2F1-2317-415F-84E2-1164BCB4DA6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryTest", "LibraryTest\LibraryTest.csproj", "{6A9A361C-ACA8-4B35-9EDF-4C0FD048B6DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{333CC2F1-2317-415F-84E2-1164BCB4DA6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{333CC2F1-2317-415F-84E2-1164BCB4DA6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{333CC2F1-2317-415F-84E2-1164BCB4DA6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A9A361C-ACA8-4B35-9EDF-4C0FD048B6DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A9A361C-ACA8-4B35-9EDF-4C0FD048B6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A9A361C-ACA8-4B35-9EDF-4C0FD048B6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A9A361C-ACA8-4B35-9EDF-4C0FD048B6DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
