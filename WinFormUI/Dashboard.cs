@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library;
+using System;
 using System.Windows.Forms;
 
 namespace WinFormUI
@@ -12,12 +13,8 @@ namespace WinFormUI
 
         private void generateEmployeeIdButton_Click(object sender, EventArgs e)
         {
-            GenerateEmployeeID(firstNameText.Text, lastNameText.Text);
-        }
-
-        private string GenerateEmployeeID(string firstName, string lasteName)
-        {
-            return $"{ firstNameText.Text.Substring(0, 4) }{ lastNameText.Text.Substring(0, 4) }{ DateTime.Now.Millisecond }";
+            EmployeeProcessor employeeProcessor = new EmployeeProcessor();
+            employeeIdText.Text = employeeProcessor.GenerateEmployeeID(firstNameText.Text, lastNameText.Text);
         }
     }
 }
