@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,8 @@ namespace WPFUI
 
         private void createEmployeeIdButton_Click(object sender, RoutedEventArgs e)
         {
-
+            EmployeeProcessor employeeProcessor = new EmployeeProcessor();
+            employeeId.Text = employeeProcessor.GenerateEmployeeID(firstName.Text, lastName.Text);
         }
     }
 }
