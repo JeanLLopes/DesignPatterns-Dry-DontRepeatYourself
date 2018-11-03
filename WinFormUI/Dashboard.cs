@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WinFormUI
@@ -19,8 +12,12 @@ namespace WinFormUI
 
         private void generateEmployeeIdButton_Click(object sender, EventArgs e)
         {
-            string employeeId = $@"{ firstNameText.Text.Substring(0, 4) }{ lastNameText.Text.Substring(0, 4) }{ DateTime.Now.Millisecond }";
-            employeeIdText.Text = employeeId;
+            GenerateEmployeeID(firstNameText.Text, lastNameText.Text);
+        }
+
+        private string GenerateEmployeeID(string firstName, string lasteName)
+        {
+            return $"{ firstNameText.Text.Substring(0, 4) }{ lastNameText.Text.Substring(0, 4) }{ DateTime.Now.Millisecond }";
         }
     }
 }
