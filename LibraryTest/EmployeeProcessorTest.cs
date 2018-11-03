@@ -1,9 +1,4 @@
 ﻿using Library;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 namespace LibraryTest
 {
@@ -11,12 +6,14 @@ namespace LibraryTest
     {
         [Theory]
         [InlineData("Jean", "Lopes", "JeanLope")]
+        [InlineData("Tim", "Lopes", "TimLope")]
+        [InlineData("Tim", "Co", "TimCo")]
         public void GenerateEmploeeId_ShouldCalculate(string firstName, string secondName, string expectedStart)
         {
             //Arrange
             EmployeeProcessor employeeProcessor = new EmployeeProcessor();
             //Act
-            string actualStart = employeeProcessor.GenerateEmployeeID(firstName, secondName).Substring(0, 8);
+            string actualStart = employeeProcessor.GenerateEmployeeID(firstName, secondName).Substring(0, expectedStart.Length);
 
             //Assert
             Assert.Equal(expectedStart, actualStart);

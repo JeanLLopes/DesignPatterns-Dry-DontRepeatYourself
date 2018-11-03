@@ -10,7 +10,19 @@ namespace Library
     {
         public string GenerateEmployeeID(string firstName, string lasteName)
         {
-            return $"{ firstName.Substring(0, 4) }{ lasteName.Substring(0, 4) }{ DateTime.Now.Millisecond }";
+            return $"{ GetPartOfName(firstName, 4) }{ GetPartOfName(lasteName, 4) }{ DateTime.Now.Millisecond }";
+        }
+
+        private string GetPartOfName(string name, int numberOfCharacters)
+        {
+            string output = name;
+
+            if (name.Length > numberOfCharacters)
+            {
+                output = name.Substring(0, numberOfCharacters);
+            }
+
+            return output;
         }
 
     }
